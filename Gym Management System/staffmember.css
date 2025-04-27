@@ -1,0 +1,36 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.container {
+    background-color:rgba(36, 35, 35, 0.737);
+    color: white;
+    padding: 20px;
+    width: 75rem;
+    margin: 0 0 0 15rem;  
+}
+
+#head {
+    color: white;
+    margin-bottom: 2rem;
+    margin-left: 12rem;
+    text-align: center;
+  }
+
+table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 12px;
+    border: 1px solid #262626;
+    text-align: left;
+}
+
+th {
+    background-color: hwb(0 7% 93%);
+    color: white;
+}

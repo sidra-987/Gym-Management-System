@@ -1,0 +1,94 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+}
+ 
+h1 {
+    background-color: #131211;
+    color: white;
+    height: 5rem;
+    line-height: 5rem;
+}
+
+.background {
+    background-image: url("cbum.jpg");
+    background-size: cover;
+    height: 46rem;
+}
+
+.container {  
+    height: 40rem;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    padding-left: 40vh;
+}
+ 
+.login-container {
+    text-align: center;
+    padding: 40px;
+    border-radius: 10px;
+    width: 350px;
+    background-color:rgba(36, 35, 35, 0.737);
+}
+
+input {
+    color: white;
+    font-size: 14px;
+}
+
+.input-group {
+    position: relative;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 5px;
+    height: 40px;
+    width: 300px;
+    background: #131211;
+} 
+
+input::placeholder {
+    color: #ddd;
+    justify-content: left;
+    align-items: center;
+    padding-right: 25vh;
+} 
+
+.input-group i {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #666;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px 10px 10px 35px;
+    background: #131211;
+    text-align: left;
+}
+
+button {
+    height: 2rem;
+    width: 7rem;
+    margin: 1rem 0 0 0;
+    font-size: 12px;
+    font-weight: bold;
+    cursor: pointer;
+    background: #131211;
+    color: white;
+} 
+
+.forgot-password {
+    margin: 3rem 0 0 0;
+    display: block;
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+.forgot-password:hover {
+    text-decoration: underline;
+}
+

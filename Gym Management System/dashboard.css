@@ -1,0 +1,156 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.panel {
+    max-width: 80rem;
+    margin: 0 0 0 10rem;
+    padding: 1rem 0 0 5rem;
+    width: 100%; 
+}
+
+#overview {
+    font-family: 'Poppins', sans-serif;
+    padding: 0;
+    color: #2f3640;
+}
+
+h1 {
+    color: white;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin-top: 5px;
+}
+.card {
+    background-color: #2f3640;
+    color: lavenderblush;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.middle{
+    height: 100%;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    color: #2f3640;
+    overflow: hidden; /* No scroll */
+}
+
+main {
+    display: grid;
+    grid-template-areas:"payment payment staff"
+      "members attendance equipments";
+    grid-template-columns: 2fr 2fr 1fr;
+    gap: 8px;
+    box-sizing: border-box;   
+}
+
+section {
+    background: #2f3640a5;
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+ 
+.top {
+    margin: 5px 0;
+    color: #d4d5da;
+}
+
+#staff, #equipments {
+    background-color: #2f3640;
+    border: 2px solid #cacaca;
+    padding: 15px;
+    border-radius: 60px;
+    border-style: inset;
+    height: 15rem;
+    margin-left: 1rem;
+}
+
+#payment {
+    grid-area: payment;
+    height: 17rem;
+    padding: 0;
+}
+
+#staff {
+    grid-area: staff;
+    
+}
+
+#equipments {
+    grid-area: equipments;
+}
+
+#members {
+    grid-area: members;
+}
+
+#attendance {
+    grid-area: attendance;
+}
+
+ul {
+    padding: 1rem;
+    list-style: none;
+    margin: 0;
+}
+
+ul li {
+    margin: 3px 0 1rem 0;
+    color: azure;
+}
+ 
+.payment-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.payment-chart {
+    width: 40%; 
+}
+
+.summary {
+    color: #f0f0f0;
+    margin-bottom: 15px;
+    
+}
+
+.payment-summary table {
+    width: 100%;
+    margin-left: 7rem;
+    border-collapse: collapse;
+}
+
+.payment-summary th, .payment-summary td {
+    color: aliceblue;
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+} 
+
+.attendance-stats {
+    color: white;
+}
+
+.member-cards{
+    color: white;
+    display: flex;
+    gap: 1rem;
+}
+
+

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Equipments Entry</title>
+    <link
+    rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"/>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="Equip-entry.css" />
+</head>
+<body>
+    <div class="background">
+        <div class="content">
+            <div class="topbar" id="bar"> 
+              <a href="Equipment.html">Equipment List</a>
+            </div>
+
+            <div class="container">
+                <h2 id="head">Equipment Entry</h2>
+
+            <form id="equipmentForm">
+                <div class="form-group">
+                    <label for="equipmentName">Equipment Name</label>
+                    <input type="text" id="equipmentName" required>
+                </div>
+                <div class="form-group">
+                    <label for="description">Description</label>
+                    <input type="text" id="description" required>
+                </div>
+                <div class="form-group">
+                    <label for="equipmentQuantity">Quantity</label>
+                    <input type="text" id="equipmentQuantity" required>
+                </div>
+                <div class="form-group">
+                    <label for="equipmentPrice">Amount</label>
+                    <input type="text" id="equipmentPrice" required>
+                </div>
+                <div class="form-group">
+                    <label for="vendor">Vendor</label>
+                    <input type="text" id="vendor" required>
+                </div>
+                <div class="form-group">
+                    <label for="vendorContact">Contact</label>
+                    <input type="text" id="vendorContact" required>
+                </div>
+                <div class="form-group">
+                    <label for="equipmentPurchaseDate">Purchase Date</label>
+                    <input type="date" id="equipmentPurchaseDate" required>
+                </div>
+                
+                <button type="submit">Add Equipment</button>
+            </form>
+            </div>
+        </div>
+    </div>
+    <script src="Equipment.js"></script>
+</body>
+</html>

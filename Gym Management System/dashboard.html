@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link
+    rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+  />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="dashboard.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+</head>
+<body>
+    <div class="background">
+        <div class="sidebar">
+            <div class="top">
+              <div class="logo">
+                <h2>POWER HOUSE</h2>
+              </div>
+            </div>
+          
+            <a href="dashboard.html">
+              <span class="material-symbols-outlined">speed</span>
+              <h3>Dashboard</h3>
+            </a>
+            <a href="reg-form.html">
+              <span class="material-symbols-outlined">person</span>
+              <h3>New Registration</h3>
+            </a>
+            <a href="Equipment.html">
+              <span class="material-symbols-outlined">fitness_center</span>
+              <h3>Equipments</h3>
+            </a>
+            <a href="staffmember.html">
+              <span class="material-symbols-outlined">group</span>
+              <h3>Staff Members</h3>
+            </a>
+            <a href="attendance.html">
+              <span class="material-symbols-outlined">patient_list</span>
+              <h3>Attendance</h3>
+            </a>
+            <a href="diet-plan.html">
+              <span class="material-symbols-outlined">nutrition</span>
+              <h3>Plan</h3>
+            </a>
+            <a href="payment.html">
+              <span class="material-symbols-outlined">payments</span>
+              <h3>Payment</h3>
+            </a>
+            <a href="home.html">
+              <span class="material-symbols-outlined">logout</span>
+              <h3>Logout</h3>
+            </a>
+          </div>
+
+        <div class="panel">
+          <div id="overview" class="tab-content active">
+            <h1>Admin Dashboard</h1>
+            <div class="cards">
+                <div class="card">
+                    <h3>Total Members</h3>
+                    <p>250</p>
+                </div>
+                <div class="card">
+                    <h3>Active Staff</h3>
+                    <p>20</p>
+                </div>
+                <div class="card">
+                    <h3>Monthly Revenue</h3>
+                    <p>$12,500</p>
+                </div>
+                <div class="card">
+                    <h3>Equipments</h3>
+                    <p>150</p>
+                </div>
+            </div>
+
+            <div class="middle">
+              <main>
+                <section id="payment">
+                  <h2 class="top">Payment</h2>
+                  <div class="payment-container">
+                      <div class="payment-chart">
+                          <canvas id="paymentChart"></canvas>
+                      </div>
+                    
+                      <div class="payment-summary">
+                          <h3 class="summary">Summary</h3>
+                          <table>
+                              <tr>
+                                  <th>Total Revenue</th>
+                                  <td id="totalRevenue">$0</td>
+                              </tr>
+                              <tr>
+                                  <th>Total Paid</th>
+                                  <td id="totalPaid">$0</td>
+                              </tr>
+                              <tr>
+                                  <th>Total Pending</th>
+                                  <td id="totalPending">$0</td>
+                              </tr>
+                          </table>
+                      </div>
+                  </div>
+              </section>
+              
+              <section id="staff">
+                  <h2 class="top">Staff Members</h2>
+                  <ul>
+                      <li>Trainer : 3</li>
+                      <li>Receptionists : 2</li>
+                      <li> Cleaning Staff : 5</li>
+                  </ul>
+               </section>
+            
+               <section id="equipments">
+                  <h2 class="top">Equipments</h2>
+                  <ul>
+                    <li>Treadmills :  7</li>
+                    <li>Ellipticals :  7</li>
+                    <li>weights : 35</li>
+                </ul>
+               </section>
+
+               <section id="members">
+                <h2 class="top">Members Status</h2>
+                
+                <div class="member-cards">
+                  <div class="member-card">
+                    <h4>Total Members</h4>
+                    <p id="totalMembersCard">0</p>
+                  </div>
+                  <div class="member-card">
+                    <h4>Active Members</h4>
+                    <p id="activeMembersCard">0</p>
+                  </div>
+                  <div class="member-card">
+                    <h4>Inactive Members</h4>
+                    <p id="inactiveMembersCard">0</p>
+                  </div>
+                </div>
+                <canvas id="memberChart"></canvas>
+              </section>
+
+               <section id="attendance">
+                <h2 class="top">Attendance</h2>
+                <div class="attendance-stats">
+                  <p>Total Present: <span id="totalPresent">0</span></p>
+                  <p>Total Absent: <span id="totalAbsent">0</span></p>
+                </div>
+          
+                <canvas id="attendanceChart"></canvas>
+               </section>
+    
+              </main>
+            </div>
+          </div>
+        </div>
+    </div>
+
+    <script src="dashboard.js"></script>
+</body>
+</html>

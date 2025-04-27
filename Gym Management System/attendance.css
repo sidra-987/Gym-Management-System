@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    padding: 8rem;
+}
+
+.box {
+    font-family: 'Poppins', sans-serif;
+    background-color:rgba(36, 35, 35, 0.737);
+    color: white;
+    padding: 20px;
+    margin: 0 0 0 14rem;  
+    width: 100%;
+    max-width: 1000px;
+    border-radius: 1rem;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+.form-card {
+    background: rgba(13, 18, 19, 0.482);
+    padding: 8px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    margin-bottom: 25px;
+}
+
+form {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+form input, form select, form button {
+    padding: 6px 3px;
+    border: 1px solid #dcdde1;
+    border-radius: 8px;
+    font-size: 16px;
+}
+  
+form input, form select {
+    flex: 1 1 200px;
+}
+  
+form button {
+    background-color: #105030;
+    color: white;
+    border: none;
+    cursor: pointer;
+    flex: 1 1 150px;
+    transition: background 0.3s;
+}
+ 
+form button:hover {
+    background-color: #009d42;
+}
+
+.search-bar {
+    margin-bottom: 20px;
+    text-align: right;
+}
+
+#search-input {
+    background-color: aliceblue;
+    padding: 4px 9px;
+    border: 1px solid #a9abb1;
+    border-radius: 8px;
+    width: 300px;
+    max-width: 100%;
+} 
+  
+table {
+    width: 100%;
+    margin-top: 40px;
+    border-collapse: collapse;
+}
+
+th, td { 
+    padding: 12px;
+    border: 1px solid #262626;
+    text-align: left;
+}
+
+th {
+    background-color: hwb(0 7% 93%);
+    color: white;
+}
